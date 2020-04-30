@@ -1,1 +1,0 @@
-concommand.Add("moon_hello", (ply) -> PrintMessage 3, "Hello, #{ply\Name()}")
