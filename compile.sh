@@ -1,9 +1,8 @@
 rm -rf lua
 mkdir lua
 
-cd lua
-
 # Compile the MoonScript code into Lua.
-moonc -t . ../src
+moonc -t lua src
 
-mv src autorun
+mv -v lua/src/* lua
+rmdir lua/src
